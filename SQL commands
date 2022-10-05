@@ -1,0 +1,11 @@
+CREATE TABLE CEARENSE (
+ id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, {somente obs: a primary key serve para não ter uma copia de um item}
+ conta{<--nomedacoluna} VARCHAR(30) NOT NULL, {somente obs: sempre nas linhas se deve terminar com "," para o banco entender que chegou ao fim daquele valor...}
+ senha VARCHAR(30) NOT NULL {somente obs: ... exceto quando se chega nom fim do codigo, não é necessario "," e se colocar irá ocorrer um erro}
+ )
+ 
+ INSERT INTO  nomedatabela(nome1, nome2) VALUES('valor1', 'valor2'); {somente obs: após "INSERT INTO  nomedatabela" é necessario usar o nome que foi escolhido para as colunas ali em cima, nos valores é necessario '' entre elas}
+ SELECT * from nomedatabela c {somente obs: selecionar e ver como esta a tabela}
+ INSERT INTO  nomedatabela(id, conta, senha) VALUES(1,'conta1', 'senha1');
+ DELETE from nomedatabela WHERE IDdacoluna(<--numero que aparece na tabela, quando se usa o select) {somente obs: }
+
